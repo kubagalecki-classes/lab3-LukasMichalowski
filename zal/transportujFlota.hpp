@@ -13,7 +13,7 @@ unsigned int transportujFlota(unsigned int towar)
         towar2 += s->transportuj();
         delete s;
     }
-    while(towar2>=towar)
+    while(towar2>=towar);
 
 
 
