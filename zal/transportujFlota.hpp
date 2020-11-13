@@ -5,14 +5,12 @@
 unsigned int transportujFlota(unsigned int towar)
 {
     if((towar = 0)) { return 0;}
-    int towar2 = 0;
-    do
+    for(int i = 0; i<towar; i++)
     {
         Stocznia stocznia{};
         Statek* s = stocznia();
-        towar2 += s->transportuj();
+        i = i + s->transportuj();
         delete s;
     }
-    while(towar2>=towar);
     return 0;
 }
