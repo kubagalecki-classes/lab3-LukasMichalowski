@@ -4,7 +4,7 @@
 
 unsigned int transportujFlota(unsigned int towar)
 {
-    if(towar = 0) { return 0;}
+    if((towar = 0)) { return 0;}
     int towar2 = 0;
     do
     {
@@ -14,8 +14,5 @@ unsigned int transportujFlota(unsigned int towar)
         delete s;
     }
     while(towar2>=towar);
-
-
-
     return 0;
 }
