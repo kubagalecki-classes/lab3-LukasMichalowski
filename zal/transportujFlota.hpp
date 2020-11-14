@@ -5,8 +5,8 @@
 unsigned int transportujFlota(unsigned int towar)
 {
     if((towar = 0)) { return 0;}
-    int zaglowiec=0;
-    for(int i = 0; i<towar; i++)
+    unsigned int zaglowiec=0;
+    for(unsigned int i = 0; i<towar; i++)
     {
         Stocznia stocznia{};
         Statek* s = stocznia();
