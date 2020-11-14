@@ -6,12 +6,14 @@ unsigned int transportujFlota(unsigned int towar)
 {
     if((towar = 0)) { return 0;}
     unsigned int zaglowiec=0;
-    for(unsigned int i = 0; i<towar; i++)
+    Stocznia stocznia();
+    int t=0;
+   while(t<towar)
     {
-        Stocznia stocznia{};
         Statek* s = stocznia();
-        i = i + s->transportuj();
-        if(Zaglowiec* x= dynamic_cast<Zaglowiec*>(s)){
+        t = t + s->transportuj();
+        Zaglowiec* x= dynamic_cast<Zaglowiec*>(s)
+        if(x != null ){
             zaglowiec+=1;
         }
         delete s;
