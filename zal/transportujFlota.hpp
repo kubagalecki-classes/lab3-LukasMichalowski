@@ -13,7 +13,7 @@ unsigned int transportujFlota(unsigned int towar)
         Statek* s = stocznia();
         t = t + s->transportuj();
         Zaglowiec* x= dynamic_cast<Zaglowiec*>(s);
-        if(x != null ){
+        if(x != nullptr ){
             zaglowiec+=1;
         }
         delete s;
