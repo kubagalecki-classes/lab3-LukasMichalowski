@@ -1,6 +1,8 @@
 #pragma once
 
-#include "Stocznia.hpp"
+#include "include/Stocznia.hpp"
+#include "include/Statki.hpp"
+
 
 unsigned int transportujFlota(unsigned int towar)
 {
@@ -16,8 +18,7 @@ unsigned int transportujFlota(unsigned int towar)
     {
         Statek* s = stocznia();
         t = t + s->transportuj();
-        Zaglowiec* x= dynamic_cast<Zaglowiec*>(s);
-        if(x != nullptr){
+        if(dynamic_cast<Zaglowiec*>(s)){
             zaglowiec++;
         }
         delete s;
